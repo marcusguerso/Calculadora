@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clássica</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/calculadora.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="selecionada">Clássica</a>
+        <a href="equacaoDoisPontos.html">Equações Entre Dois Pontos</a>
+        <a href="distanciaPontoEReta.html">Distância Entre Ponto e Reta</a>
+        <a href="equacaoReduzida.html">Equação Reduzida</a>
+        <a href="posicaoRelativaRetas.html">Posição Relativa das Retas</a>
+    </nav>
+
+    <div class="calculadora">
+        <input type="text" disabled class="display" id="display">
+        <div class="primeiros-botoes">
+            <button onclick="limpar()">LIMPAR</button>
+            <button onclick="backspace()">«</button>
+            <button onclick="selecionarOperacao('/')">/</button>
+        </div>
+        <div class="botoes-centrais">
+            <button onclick="inserirNumero('7')">7</button>
+            <button onclick="inserirNumero('8')">8</button>
+            <button onclick="inserirNumero('9')">9</button>
+            <button onclick="selecionarOperacao('*')">*</button>
+            <button onclick="inserirNumero('4')">4</button>
+            <button onclick="inserirNumero('5')">5</button>
+            <button onclick="inserirNumero('6')">6</button>
+            <button onclick="selecionarOperacao('-')">-</button>
+            <button onclick="inserirNumero('1')">1</button>
+            <button onclick="inserirNumero('2')">2</button>
+            <button onclick="inserirNumero('3')">3</button>
+            <button onclick="selecionarOperacao('+')">+</button>
+        </div>
+        <div class="ultimos-botoes">
+            <button onclick="inserirNumero('0')">0</button>
+            <button onclick="inserirDecimal()">,</button>
+            <button onclick="chamarIgual()">=</button>
+        </div>
+    </div>
+
+    <script src="javascript/classica.js"></script>
+</body>
+</html>
