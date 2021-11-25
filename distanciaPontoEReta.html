@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Distância entre ponto e reta</title>
+    <link rel="stylesheet" href="css\menu.css">
+    <link rel="stylesheet" href="css\calculadora.css">
+    <link rel="stylesheet" href="css\distanciaPontoEReta.css">
 </head>
 <body>
     
@@ -16,6 +19,26 @@
         <a href="posicaoRelativaRetas.html">Posição Relativa das Retas</a>
     </nav>
 
-    <h1>Distância entre ponto e reta</h1>
+    <div class="calculadora">
+        <input type="test" disabled class="display" id="display"/>
+
+    <div class="pontos">
+        <label>Ponto A</label>
+        <div><span>X:</span><input type="number" class="ponto" id="xA"></div>
+        <div><span>Y:</span><input type="number" class="ponto" id="yA"></div>
+    </div>
+
+    <div class="equacao">
+        <label>Ponto B</label>
+        <div><span>X:</span><input type="number" class="ponto" id="xB"></div>
+        <div><span>Y:</span><input type="number" class="ponto" id="yB"></div>
+        </div>
+
+        <div class="primeira-linha">
+        <button onclick="limpar()">LIMPAR</button>
+        </div>
+        <div class="primeira-linha">
+        <button onclick="limpar()">DISTANCIA ENTRE PONTO E RETA</button>
+        </div>
 </body>
 </html>

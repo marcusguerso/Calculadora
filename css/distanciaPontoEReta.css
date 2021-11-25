@@ -1,0 +1,75 @@
+.pontos {
+    display: grid;
+    grid-template-columns: 0.8fr 2fr 2fr;
+    grid-gap: 20px;
+    margin-bottom: 10px;
+}
+
+.equacao {
+    display: grid;
+    grid-template-columns: 0.8fr 2fr 2fr 2fr;
+    grid-gap: 20px;
+    margin-bottom: 10px;
+}
+
+.coeficiente {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 20px;
+    margin-bottom: 10px;
+}
+.equacao {
+    display: grid;
+    grid-template-columns: 0.8fr 2fr 2fr 2fr;
+    grid-gap: 20px;
+    margin-bottom: 10px;
+}
+
+.pontos div, .equacao div, label {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.pontos span, .equacao span {
+    margin-right: 5px;
+}
+
+.calculadora {
+    width: 600px;
+}
+
+.ponto {
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+}
+
+.calculadora > .primeira-linha {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.primeira-linha {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 10px
+}
+
+.botoes-calculo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin-top: 10px
+}
+
+.calculadora button {
+  font-size: 14px; 
+} 
